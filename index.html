@@ -3,10 +3,160 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
   </head>
   <body>
+   <header class="main-header">
+     <div class="container clearfix">
+        <nav class="main-navigation">
+          <ul>
+  	        <li><a href="#">Информация</a></li>
+  	        <li><a href="#">Фото и видео</a></li>
+            <li><a class="logo-inner" href="index.html"><img src="img/logo.png" width="138" height="70" alt="Sedona"></a></li>
+            <li><a href="#">Карта штата</a></li>
+  	        <li><a href="hotels.html">Гостинницы</a></li>
+          </ul>
+        </nav>
+     </div>
+   </header>
+  <main class="container">
+       <div class="welcome clearfix">
+          <div class="welcome-sedona"><img src="img/sedona1200.png" width="1200" height="773" alt="Горы Седона"></div>
+          <div class="welcome-mask"><img src="img/mask1200.png" width="1200" height="57" alt=""></div>
+       </div>
+       <section class="promo clearfix">
+         <div class="promo-header">
+           <p class="promo-header-title">СЕДОНА — небольшой городок в АРИЗОНЕ,  заслуживающий большего! </p>
+           <p class="promo-header-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+         </div>
+       <div class="promo-content clearfix">
+         <div class="promo-content-text">
+          <div class="feature big">
+            <p class="promo-title">Настоящий городок</p>
+            <p class="promo-text number">№1</p>
+            <p class="promo-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+         </div>
+         <div class="promo-content-img">
+          <div class="promo-img-wrapper">
+            <img src="img/promo-img-1.jpg" width="800" height="256" alt="Седона - настоящий городок">
+          </div>
+         </div>
+       </div>
+       <section class="promo-content clearfix">
+         <div class="promo-content-text">
+           <b class="promo-title">Жилье</b>
+           <p class="promo-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+         </div>
+         <div class="promo-content-text">
+           <b class="promo-title">Еда</b>
+           <p class="promo-text">Всегда заказывая фирменный бургер, Вы не разочаруетесь!</p>
+         </div>
+         <div class="promo-content-text">
+           <b class="promo-title">Сувениры</b>
+           <p class="promo-text">Не только китайского, но и местного производства!</p>
+         </div>
+       </section>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+       <div class="promo-content clearfix">
+         <div class="promo-content-img">
+          <div class="promo-img-wrapper">
+            <img src="img/promo-img-2.jpg" width="800" height="256" alt="Седона - настоящий городок">
+          </div>
+         </div>
+         <div class="promo-content-text">
+          <div class="feature big">
+            <p class="promo-title">Там есть мост дьявола</p>
+            <p class="promo-text number">№2</p>
+            <p class="promo-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+         </div>
+       </div>
+       <div class="promo-content clearfix">
+         <div class="promo-content-text">
+          <div class="feature grey">
+            <p class="promo-title">Небольшая площадь</p>
+            <p class="promo-text number">№3</p>
+            <p class="promo-text">Все достопримеча&shy;тельности находятся очень близко</p>
+          </div>
+         </div>
+         <div class="promo-content-text">
+          <div class="feature grey">
+            <p class="promo-title">Красивая дорога</p>
+            <p class="promo-text number">№4</p>
+            <p class="promo-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+         </div>
+         <div class="promo-content-text">
+          <div class="feature grey">
+            <p class="promo-title">Мало туристов</p>
+            <p class="promo-text number">№5</p>
+            <p class="promo-text">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+         </div>
+       </div>
+      </section>
+      <section class="search">
+       <div class="promo-header">
+           <p class="promo-header-title">Заинтересовались?</p>
+           <p class="promo-header-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+         </div>
+         <div class="map"><img src="img/map.png" width="1200" height="593" alt="Карта"></div>
+         <form class="search-form" action="#" method="post">
+           <h2 class="search-form-title">Поиск гостиницы в Седоне</h2>
+           <div class="modal-content">
+            <p>
+              <label for="checkin">Дата заезда:</label>
+              <span class="date-span">
+                <input type="text" id="checkin" class="date-input" value="24 апреля 2015">
+                <label for="checkin" class="search-form-calendar">Date</label>
+              </span>
+            </p>
+            <p>
+              <label for="checkout">Дата выезда:</label>
+              <span>
+                <input type="text" id="checkout" class="date-input" value="4 июля 2015">
+                <label for="checkout" class="search-form-calendar">Date</label>
+              </span>
+            </p>
+            <p>
+              <label for="adults">Взрослые:</label>
+              <span class="input-wrapper">
+                <a class="search-form-minus" href="#">Less</a>
+                <input class="people-number" id="adults" type="text" pattern="[0-9]*" value="2" min="0">
+                <a class="search-form-plus" href="#">More</a>
+              </span>
+            </p>
+            <p>
+              <label for="children">Дети:</label>
+              <span class="input-wrapper">
+                <a class="search-form-minus" href="#">Less</a>
+                <input class="people-number" id="children" type="text" pattern="[0-9]*" value="0" min="0">
+                <a class="search-form-plus" href="#">More</a>
+              </span>
+            </p>
+            <input type="submit" value="Найти" disabled>
+           </div>
+         </form>
+      </section>
+  </main>
+    <footer class="main-footer">
+     <div class="container clearfix">
+      <section class="footer-tegs">
+       #VISITSEDONA
+      </section>
+      <section class="footer-social">
+         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </section>
+      <section class="footer-copyright">
+         <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+      </section>
+     </div>
+    </footer>
   </body>
 </html>
